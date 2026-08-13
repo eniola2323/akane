@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="images/navlogo.png" alt="Logo" />
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="indext.html">Home</a></li>
+
+        <li><a href="about.html">About</a></li>
+
+        <li><a href="portfolio.html">Portfolio</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="menu-btn">&#9776;</div>
+    </nav>
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+      <span class="close-btn">x</span>
+
+      <a href="home.html">Home</a>
+
+      <a href="about.html">About</a>
+
+      <a href="portfolio.html">Portfolio</a>
+
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="overlay"></div>
+
+    <!-- =================== CONTACT HERO =================== -->
+    <section class="contact-hero">
+      <div class="contact-hero-content">
+        <span class="section-label">LET'S CONNECT</span>
+        <h1>Let's Create Something <span>Amazing.</span></h1>
+        <p>
+          Have a project, idea, or question? I'd love to hear from you. Send a
+          message and let's turn your idea into something special.
+        </p>
+      </div>
+    </section>
+    <!-- =================== CONTACT SECTION =================== -->
+    <section class="contact-section">
+      <div class="overlay"></div>
+      <div class="contact-container">
+        <!-- CONTACT INFORMATION -->
+        <div class="contact-info">
+          <span class="section-label">GET IN TOUCH</span>
+          <h2>
+            Have an idea? <br />
+            <span>Let's talk.</span>
+          </h2>
+          <p>
+            Whether you need a new website, a creative design, or help
+            developing your next idea, feel free to reach out.
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">✉</div>
+              <div>
+                <h3>Email</h3>
+                <p>hello@example.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">☎</div>
+              <div>
+                <h3>Phone</h3>
+                <p>+234 7039940527</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h3>Location</h3>
+                <p>Lagos, Nigeria</p>
+              </div>
+            </div>
+          </div>
+          <!-- SOCIAL LINKS -->
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="LinkedIn">IN</a>
+            <a href="#" aria-label="GitHub">GH</a>
+            <a href="#" aria-label="Twitter">X</a>
+          </div>
+        </div>
+        <!-- CONTACT FORM -->
+        <div class="contact-form-card">
+          <div class="form-heading">
+            <span>START A PROJECT</span>
+            <h2>Send Me a Message</h2>
+          </div>
+          <form action="https://formsubmit.co/olaitaneniola076@gmail.com" method="POST" id="contactForm">
+            <div class="input-row">
+              <div class="input-group">
+                <label for="name"> Your Name </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <label for="email"> Email Address </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="input-group">
+              <label for="subject"> Subject </label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="What is your project about?"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="project"> Project Type </label>
+              <select id="project" name="project">
+                <option value="">Select a project type</option>
+                <option value="web-design">Web Design</option>
+                <option value="development">Web Development</option>
+                <option value="branding">Branding</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label for="message"> Your Message </label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tell me about your project..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="contact-submit">Send Message →</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- =================== CTA =================== -->
+    <section class="contact-cta">
+      <div>
+        <span class="section-label"> HAVE A PROJECT IN MIND? </span>
+        <h2>Great ideas start with a conversation.</h2>
+        <a href="#contactForm" class="cta-button"> Start a Conversation → </a>
+      </div>
+    </section>
+
+    <footer>
+
+    <p>© 2026 Responsive Website. All Rights Reserved.</p>
+
+</footer>
+
+     <script src="js/contact.js"></script>
+  </body>
+</html>
