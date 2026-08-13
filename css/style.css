@@ -20,6 +20,7 @@
      align-items:center;
      padding:18px 8%;
      z-index:1000;
+     background: seashell;
  }
  .logo img{
      height:60px;
@@ -40,7 +41,6 @@
  }
  .menu-btn{
      display:none;
-     color:white;
      font-size:35px;
      cursor:pointer;
  }
@@ -358,6 +358,784 @@ footer{
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+
+
+
+/* =====================================================
+   HOMEPAGE
+===================================================== */
+
+
+/* =====================================================
+   HOME HERO
+===================================================== */
+
+.home-hero {
+
+    min-height: 100vh;
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+}
+
+
+.home-hero .bg-vid {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: -2;
+
+}
+
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(62, 71, 90, 0.68);
+
+    z-index: -1;
+
+}
+
+
+.hero-content {
+
+    max-width: 900px;
+
+    padding: 30px;
+
+}
+
+
+.hero-content h1 {
+
+    font-size: 4.5rem;
+
+    line-height: 1.05;
+
+    margin: 20px 0;
+
+}
+
+
+.hero-content h1 span {
+
+    color: #38bdf8;
+
+}
+
+
+.hero-content p {
+
+    max-width: 680px;
+
+    margin: 0 auto 30px;
+
+    color: #e2e8f0;
+
+    font-size: 1.15rem;
+
+    line-height: 1.7;
+
+}
+
+
+.hero-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.hero-buttons a {
+
+    text-decoration: none;
+
+}
+
+
+.hero-secondary {
+
+    background: transparent;
+
+    border: 1px solid #38bdf8;
+
+}
+
+
+.hero-secondary:hover {
+
+    background: #38bdf8;
+
+}
+
+
+/* =====================================================
+   HOME ABOUT
+===================================================== */
+
+.home-about {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+    background: #f8fafc;
+
+}
+
+
+.home-about-image img {
+
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+}
+
+
+.home-about-text h2 {
+
+    font-size: 3rem;
+
+    color: #0f172a;
+
+    margin: 15px 0 25px;
+
+}
+
+
+.home-about-text h2 span {
+
+    color: #38bdf8;
+
+}
+
+
+.home-about-text p {
+
+    color: #64748b;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+
+}
+
+
+.text-link {
+
+    display: inline-block;
+
+    margin-top: 10px;
+
+    color: #0284c7;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+}
+
+
+.text-link:hover {
+
+    color: #38bdf8;
+
+}
+
+
+/* =====================================================
+   HOME HEADINGS
+===================================================== */
+
+.home-heading {
+
+    max-width: 700px;
+
+    margin-bottom: 50px;
+
+}
+
+
+.home-heading h2 {
+
+    font-size: 3rem;
+
+    color: #0f172a;
+
+    margin: 15px 0;
+
+}
+
+
+.home-heading h2 span {
+
+    color: #38bdf8;
+
+}
+
+
+.home-heading p {
+
+    color: #64748b;
+
+    line-height: 1.7;
+
+}
+
+
+/* =====================================================
+   SERVICES
+===================================================== */
+
+.home-services {
+
+    background: white;
+
+}
+
+
+.home-service-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.home-service-card {
+
+    padding: 30px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 18px;
+
+    transition: .3s;
+
+}
+
+
+.home-service-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #38bdf8;
+
+    box-shadow:
+        0 12px 30px rgba(15, 23, 42, .08);
+
+}
+
+
+.service-number {
+
+    color: #38bdf8;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+}
+
+
+.home-service-card h3 {
+
+    color: #0f172a;
+
+    font-size: 1.4rem;
+
+    margin: 18px 0 10px;
+
+}
+
+
+.home-service-card p {
+
+    color: #64748b;
+
+    line-height: 1.6;
+
+}
+
+
+.home-service-card a {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: #0284c7;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+}
+
+
+/* =====================================================
+   PROJECTS
+===================================================== */
+
+.home-projects {
+
+    background: #f8fafc;
+
+}
+
+
+.home-project-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.home-project {
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, .07);
+
+    transition: .3s;
+
+}
+
+
+.home-project:hover {
+
+    transform: translateY(-8px);
+
+}
+
+
+.home-project-image {
+
+    height: 260px;
+
+    overflow: hidden;
+
+}
+
+
+.home-project-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .4s;
+
+}
+
+
+.home-project:hover img {
+
+    transform: scale(1.06);
+
+}
+
+
+.home-project-info {
+
+    padding: 25px;
+
+}
+
+
+.home-project-info > span {
+
+    color: #38bdf8;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+}
+
+
+.home-project-info h3 {
+
+    color: #0f172a;
+
+    margin: 10px 0;
+
+}
+
+
+.home-project-info p {
+
+    color: #64748b;
+
+    line-height: 1.6;
+
+}
+
+
+.center-button {
+
+    text-align: center;
+
+    margin-top: 45px;
+
+}
+
+
+.center-button a {
+
+    text-decoration: none;
+
+}
+
+
+/* =====================================================
+   TESTIMONIAL
+===================================================== */
+
+.home-testimonial {
+
+    background: #0f172a;
+
+    color: white;
+
+    text-align: center;
+
+}
+
+
+.home-testimonial h2 {
+
+    font-size: 3rem;
+
+    margin: 15px 0 30px;
+
+}
+
+
+.home-testimonial h2 span {
+
+    color: #38bdf8;
+
+}
+
+
+.testimonial-text {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    font-size: 1.5rem;
+
+    line-height: 1.6;
+
+    color: #e2e8f0;
+
+}
+
+
+.testimonial-author {
+
+    color: #38bdf8;
+
+    margin-top: 20px;
+
+    font-weight: bold;
+
+}
+
+
+/* =====================================================
+   FAQ
+===================================================== */
+
+.home-faq {
+
+    background: white;
+
+}
+
+
+.faq-list {
+
+    max-width: 850px;
+
+    margin: auto;
+
+}
+
+
+.faq-list details {
+
+    margin-bottom: 15px;
+
+    background: #f8fafc;
+
+    padding: 22px;
+
+    border-radius: 12px;
+
+    border: 1px solid #e2e8f0;
+
+}
+
+
+.faq-list summary {
+
+    cursor: pointer;
+
+    color: #0f172a;
+
+    font-weight: bold;
+
+}
+
+
+.faq-list p {
+
+    color: #64748b;
+
+    line-height: 1.7;
+
+    margin-top: 15px;
+
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.home-cta {
+
+    background: #0f172a;
+
+    color: white;
+
+    text-align: center;
+
+}
+
+
+.home-cta h2 {
+
+    font-size: 3.5rem;
+
+    max-width: 800px;
+
+    margin: 15px auto;
+
+    line-height: 1.15;
+
+}
+
+
+.home-cta h2 span {
+
+    color: #38bdf8;
+
+}
+
+
+.home-cta p {
+
+    color: #cbd5e1;
+
+    margin-bottom: 30px;
+
+}
+
+
+.home-cta a {
+
+    text-decoration: none;
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 992px) {
+
+    .home-about {
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+    }
+
+
+    .home-service-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .home-project-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .home-hero {
+
+        min-height: 90vh;
+
+    }
+
+
+    .hero-content h1 {
+
+        font-size: 2.8rem;
+
+    }
+
+
+    .hero-content p {
+
+        font-size: 1rem;
+
+    }
+
+
+    .home-about {
+
+        padding: 70px 6%;
+
+    }
+
+
+    .home-about-image img {
+
+        height: 350px;
+
+    }
+
+
+    .home-about-text h2 {
+
+        font-size: 2.4rem;
+
+    }
+
+
+    .home-service-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .home-project-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .home-heading h2 {
+
+        font-size: 2.4rem;
+
+    }
+
+
+    .home-testimonial h2 {
+
+        font-size: 2.4rem;
+
+    }
+
+
+    .testimonial-text {
+
+        font-size: 1.2rem;
+
+    }
+
+
+    .home-cta h2 {
+
+        font-size: 2.5rem;
+
+    }
+
 }
 
 /* =========================================
